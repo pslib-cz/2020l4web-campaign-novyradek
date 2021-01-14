@@ -1,0 +1,323 @@
+body {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background: url(./pictures/background.jpg);
+    background-size: cover;
+    background-position: 60% 00%;
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+    visibility: hidden;
+}
+
+header img {
+    width: 335px;
+    margin-bottom: 30px;
+}
+
+header p {
+    width: 472px;
+    text-align: center;
+}
+
+header>div {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    background-color: #FD548D;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 40px;
+    margin-top: 40px;
+}
+
+header a:hover {
+    box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px;
+}
+
+section {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    color: black;
+    background-color: #EDF7FF;
+}
+
+.section2 {
+    background-color: white;
+}
+
+section>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+
+}
+
+section p {
+    width: 550px;
+}
+
+section img {
+    width: 500px;
+}
+
+.sectionobrazek {
+    align-items: center;
+}
+
+.section2text {
+    margin-left: 250px;
+}
+
+section a {
+    text-decoration: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #FD548D;
+    width: fit-content;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+section a:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    height: 250px;
+    width: 100vw;
+    background-color: #EDF7FF;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer img {
+    width: 120px;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    width: 200px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer>div>img {
+    width: 20px;
+    margin: 5px;
+}
+
+footer div {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+}
+
+.eshop2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.eshop2 img {
+    width: auto;
+    height: 500px;
+    margin-left: -200px;
+}
+
+.eshop {
+    background-color: white;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.popis ul {
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+.popis {
+    margin-left: 100px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 0px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.eshopvyber {
+    width: 100vw;
+}
+
+.eshopvyber>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.vyber {
+    height: 40px;
+    width: 40px;
+    background-color: #707070;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aktualni {
+    background-color: #FD548D;
+}
+
+.vyber a {
+    background-color: inherit;
+    padding: 0;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.vyber a:hover {
+    box-shadow: none;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 1300px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section2 {
+        flex-direction: column-reverse;
+    }
+
+    .section2text {
+        margin-left: 0;
+    }
+
+    section div {
+        text-align: center;
+        align-items: center;
+    }
+
+    header {
+        background-position: 50% 0%;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .filler {
+        display: none;
+    }
+
+    header {
+        justify-content: center;
+        background: url(./pictures/background.jpg), #00000093;
+        background-size: cover;
+        background-position: 40% 00%;
+        background-blend-mode: overlay;
+    }
+
+    .eshop2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .popis {
+        margin: 0;
+    }
+
+    .eshop2>img {
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        flex-direction: column-reverse;
+        height: 50vh;
+    }
+
+    .eshop2>img {
+        width: auto;
+        height: 400px;
+    }
+
+    h2 {
+        width: 95vw;
+    }
+
+    section {
+        height: 120vh;
+    }
+    .eshop {
+        height: 150vh;
+    }
+
+}
+
+p {
+    max-width: 85vw;
+}
+
+.sectionobrazek>img {
+    max-width: 70vw;
+}
+
+header>div>img {
+    max-width: 90vW;
+}
